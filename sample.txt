@@ -1,0 +1,118 @@
+>>> play_dino_hunt(2,2)
+Player 1, enter your name: Shannon
+Player 2, enter your name: Kyle
+
+ROUND 1
+
+
+
+Shannon has 0 points.
+Kyle has 0 points.
+
+Shannon, it's your turn!
+You have 13 dice remaining.
+6 green, 4 yellow, 3 red
+Press enter to select dice and roll.
+  A red Dino die with a foot on top.
+  A green Dino die with a dino on top.
+  A yellow Dino die with a leaf on top.
+This turn so far: 1 dinos and 1 feet
+You have 11 dice remaining.
+5 green, 4 yellow, 2 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A green Dino die with a dino on top.
+  A green Dino die with a foot on top.
+  A yellow Dino die with a dino on top.
+This turn so far: 3 dinos and 2 feet
+You have 8 dice remaining.
+3 green, 3 yellow, 2 red
+Do you want to roll again? (y/n) n
+
+
+Shannon has 3 points.
+Kyle has 0 points.
+
+Kyle, it's your turn!
+You have 13 dice remaining.
+6 green, 4 yellow, 3 red
+Press enter to select dice and roll.
+  A green Dino die with a leaf on top.
+  A green Dino die with a foot on top.
+  A green Dino die with a foot on top.
+This turn so far: 0 dinos and 2 feet
+You have 11 dice remaining.
+4 green, 4 yellow, 3 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A yellow Dino die with a foot on top.
+  A green Dino die with a foot on top.
+  A red Dino die with a leaf on top.
+Too bad -- you got stomped!
+
+ROUND 2
+
+
+
+Shannon has 3 points.
+Kyle has 0 points.
+
+Shannon, it's your turn!
+You have 13 dice remaining.
+6 green, 4 yellow, 3 red
+Press enter to select dice and roll.
+  A green Dino die with a leaf on top.
+  A green Dino die with a dino on top.
+  A yellow Dino die with a dino on top.
+This turn so far: 2 dinos and 0 feet
+You have 11 dice remaining.
+5 green, 3 yellow, 3 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A green Dino die with a dino on top.
+  A red Dino die with a leaf on top.
+  A yellow Dino die with a foot on top.
+This turn so far: 3 dinos and 1 feet
+You have 9 dice remaining.
+4 green, 2 yellow, 3 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A yellow Dino die with a dino on top.
+  A red Dino die with a foot on top.
+  A green Dino die with a foot on top.
+Too bad -- you got stomped!
+
+
+Shannon has 3 points.
+Kyle has 0 points.
+
+Kyle, it's your turn!
+You have 13 dice remaining.
+6 green, 4 yellow, 3 red
+Press enter to select dice and roll.
+  A green Dino die with a dino on top.
+  A yellow Dino die with a leaf on top.
+  A red Dino die with a dino on top.
+This turn so far: 2 dinos and 0 feet
+You have 11 dice remaining.
+5 green, 4 yellow, 2 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A yellow Dino die with a foot on top.
+  A green Dino die with a leaf on top.
+  A yellow Dino die with a dino on top.
+This turn so far: 3 dinos and 1 feet
+You have 9 dice remaining.
+5 green, 2 yellow, 2 red
+Do you want to roll again? (y/n) y
+Press enter to select dice and roll.
+  A green Dino die with a dino on top.
+  A green Dino die with a leaf on top.
+  A green Dino die with a leaf on top.
+This turn so far: 4 dinos and 1 feet
+You have 8 dice remaining.
+4 green, 2 yellow, 2 red
+Do you want to roll again? (y/n) n
+
+We have a winner!
+Kyle has 4 points.

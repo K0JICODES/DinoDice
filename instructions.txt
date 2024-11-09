@@ -1,0 +1,17 @@
+Implement the dice game Dino Hunt Dice with the following rules. (This game is based on the game Dino Hunt Dice published by Steve Jackson Games.)
+
+The game uses 13 colored 6-sided dice:
+- 6 green dice: these have dinosaurs on 3 sides, leaves on 2 sides, and a foot on 1 side
+- 4 yellow dice: these have dinosaurs on 2 sides, leaves on 2 sides and feet on 2 sides
+- 3 red dice: these have dinosaurs on 1 side, leaves on 2 sides, and feet on 3 sides
+
+The object is to capture as many dinosaurs as possible, while avoiding getting stomped. The game runs for a predetermined number of turns, so that each player gets an equal number of turns.
+
+On each turn:
+- at the start of the turn, all 13 dice are placed into a pile
+- the player randomly selects 3 dice and rolls them (if fewer than 3 dice are remaining, the player rolls all the remaining dice)
+- any dice showing dinosaurs and feet are set aside; any dice showing leaves are put back into the pile of unrolled dice
+- if the player has rolled 3 or more feet during the turn, the player has been stomped: they lose all the dinosaurs captured during the turn and their turn ends.
+- the player can stop and score 1 point for each dinosaur captured, or can continue rolling.
+
+The player with the highest score wins.
