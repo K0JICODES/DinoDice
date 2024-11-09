@@ -51,17 +51,30 @@ class Die:
 ### end Die class ###
 
 class DinoDie(Die):
-     def __init__(self,color,dinos,leaves,feet):
+    def __init__(self, color, dinos, leaves, feet, sides=6):
         self.color = color
         self.dinos = dinos
         self.leaves = leaves
         self.feet = feet
 
-        
+    def __str__(self):
+        return 'A '+str(self.color)+' die with '+\
+               str(self.get_top())+' on top'
+
+    def roll(self):
+        Die.roll()
+
+    def get_top(self):
+        Die.get_top()
+
+    def set_top(self):
+        random.randrange()
 
 class DinoPlayer:
-    def createplayer(self,name):
-        return
+
+    def __init__(self, name):
+        self.name = name
+
 
 
 def play_dino_hunt(numPlayers,numRounds):
