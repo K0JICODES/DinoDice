@@ -56,27 +56,43 @@ class DinoDie(Die):
         self.dinos = dinos
         self.leaves = leaves
         self.feet = feet
+        sides = len(sides)
 
     def __str__(self):
         return 'A '+str(self.color)+' die with '+\
                str(self.get_top())+' on top'
 
     def roll(self):
-        Die.roll()
+        self.top = random.choice(self.sides)
 
     def get_top(self):
         Die.get_top()
-
-    def set_top(self):
-        random.randrange()
 
 class DinoPlayer:
 
     def __init__(self, name):
         self.name = name
+        self.score = 0
+        
+    def add_points(self, points):
+        self.score += points
+
+    def roll_dice(self):
+        while True:
+            user_roll = input("Press enter to roll 3 random dice.")
+            if user_roll == "":
+                break
+            else:
+                print("Please type enter.")
+        random_dice = random.sample(dices, 3)
+        results = []
+        for dice in random_dice:
+            rolled_values = dice.roll()
+            results.append(rolled_values)
+        return results
 
 
-
+   
 def play_dino_hunt(numPlayers,numRounds):
     '''play_dino_hunt(numPlayer,numRounds)
     plays a game of Dino Hunt
