@@ -56,14 +56,12 @@ class DinoDie(Die):
         self.dinos = dinos
         self.leaves = leaves
         self.feet = feet
-        sides = len(sides)
+        Die.__init__(self, range(1,sides))
 
     def __str__(self):
         return 'A '+str(self.color)+' die with '+\
                str(self.get_top())+' on top'
 
-    def roll(self):
-        self.top = random.choice(self.sides)
 
     def get_top(self):
         Die.get_top()
@@ -84,7 +82,7 @@ class DinoPlayer:
                 break
             else:
                 print("Please type enter.")
-        random_dice = random.sample(dices, 3)
+        random_dice = random.sample(dices,3)
         results = []
         for dice in random_dice:
             rolled_values = dice.roll()
@@ -92,15 +90,60 @@ class DinoPlayer:
         return results
 
 
-   
-def play_dino_hunt(numPlayers,numRounds):
-    '''play_dino_hunt(numPlayer,numRounds)
-    plays a game of Dino Hunt
-      numPlayers is the number of players
-      numRounds is the number of turns per player'''
-    red_die = DinoDie("red", 1, 2, 3)
-    yellow_die = DinoDie("red", 2, 2, 2)
-    green_die = DinoDie("red", 3, 2, 1)
+def play_dino_hunt(): 
+    numPlayers = int(input("How many players are playing?"))
+    numRounds = int(input("How many rounds would you like to play?"))
+    names = {}
+    players = {}
+    for x in range(1, numPlayers+1):
+        player_name = input(f"What is player{x}'s name?")
+        names[player_name] = 0
+        players[player_name] = DinoPlayer(player_name)
+    print(players)
+    print(players['jason'])
+    print(players['jason'].name)
+    print(players['jason'].score)
 
+
+    
+
+    for g in range(6):
+        dices.append(DinoDie('green', 3, 2, 1, sides=6))
+
+    for y in range(4):
+        dices.append(DinoDie('yellow', 2, 2, 2, sides=6))
+    
+    for r in range(3):
+        dices.append(DinoDie('red', 1, 2, 3, sides=6))
+
+    print(dices)
+    print(len(dices))
+
+    for dice in dices:
+        print(dice['sides'])
+
+
+
+    for playerName, player in players.items():
+        print(playerName)
+        results = player.roll_dice()
+        print(results)
+
+
+
+dices = []
+numDice = 13
+
+play_dino_hunt()
+    
+""" scoreCard = {"tony":{"1":0,"2":4,"3":0},"jason":{"1":0,"2":4,"3":0}}    
+print(scoreCard)   
+    
+scoreCard2 = {}
+scoreCard2['tony'] = {}
+scoreCard2['tony'][1] = 0;
+
+print(scoreCard2)
+ """
 
 
