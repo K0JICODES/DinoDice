@@ -65,6 +65,7 @@ class DinoDie(Die):
 
     def get_top(self):
         Die.get_top()
+        return self.top
 
 class DinoPlayer:
 
