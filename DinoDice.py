@@ -15,12 +15,15 @@ class Die:
         -or- sides is a list/tuple of sides'''
         # if an integer, create a die with sides
         #  from 1 to sides
+        print(sides)
         if isinstance(sides,int):
             self.numSides = sides
             self.sides = list(range(1,sides+1))
+            print('here1')
         else:  # use the list/tuple provided 
             self.numSides = len(sides)
             self.sides = list(sides)
+            print('here2')
         # roll the die to get a random side on top to start
         self.roll()
 
@@ -56,7 +59,7 @@ class DinoDie(Die):
         self.dinos = dinos
         self.leaves = leaves
         self.feet = feet
-        Die.__init__(self, range(1,sides))
+        Die.__init__(self, range(1,sides+1))
 
     def __str__(self):
         return 'A '+str(self.color)+' die with '+\
@@ -121,7 +124,7 @@ def play_dino_hunt():
     print(len(dices))
 
     for dice in dices:
-        print(dice['sides'])
+        print(dice.sides)
 
 
 
